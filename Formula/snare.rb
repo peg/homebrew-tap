@@ -1,8 +1,8 @@
 class Snare < Formula
-  desc "Lightweight canary token server — detect unauthorized access to files, URLs, and secrets"
+  desc "Honeypot canaries for AI agents — detect compromise via fake credentials"
   homepage "https://snare.sh"
   version "0.1.1"
-  license "MIT"
+  license "Apache-2.0"
 
   on_macos do
     on_intel do
