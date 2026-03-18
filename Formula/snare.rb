@@ -1,30 +1,30 @@
 class Snare < Formula
   desc "Honeypot canaries for AI agents — detect compromise via fake credentials"
   homepage "https://snare.sh"
-  version "0.1.1"
+  version "0.1.3"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/peg/snare/releases/download/v0.1.1/snare_darwin_amd64.tar.gz"
-      sha256 "524da4e0882690d8277de4fd17961b35412be6a0a0da1b3797fc041f302ae73a"
+      url "https://github.com/peg/snare/releases/download/v0.1.3/snare_darwin_amd64.tar.gz"
+      sha256 "20c732149d8a2d19830f34e27ba5b072c0dd6e674313633ab3c6049e5073ef18"
     end
 
     on_arm do
-      url "https://github.com/peg/snare/releases/download/v0.1.1/snare_darwin_arm64.tar.gz"
-      sha256 "76c9cbb565f568f145ac5b1e355b63b750b349fee3c2edd3ad21843285556067"
+      url "https://github.com/peg/snare/releases/download/v0.1.3/snare_darwin_arm64.tar.gz"
+      sha256 "ffdda84705e8fdef47c062266b6273378accddc59b98115173ce65b385b1f6c9"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/peg/snare/releases/download/v0.1.1/snare_linux_amd64.tar.gz"
-      sha256 "f8c01056298e45dd629d2501b46a39a735572bedb5159d1ecdc87ce302a0845f"
+      url "https://github.com/peg/snare/releases/download/v0.1.3/snare_linux_amd64.tar.gz"
+      sha256 "661a1be21ac1ffa4660b98b80c4c6838a93faa6915b94f8125e53fe6828a345b"
     end
 
     on_arm do
-      url "https://github.com/peg/snare/releases/download/v0.1.1/snare_linux_arm64.tar.gz"
-      sha256 "842df26e2366058312cbbf6afd549729eaed62c0d9570f9889251dbcbf385274"
+      url "https://github.com/peg/snare/releases/download/v0.1.3/snare_linux_arm64.tar.gz"
+      sha256 "6e3b0e13ea2933fe9e7e97093cdecdafebf0f0c290109aa61cbe851392c1b037"
     end
   end
 
