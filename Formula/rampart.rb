@@ -32,6 +32,16 @@ class Rampart < Formula
     bin.install "rampart"
   end
 
+  def caveats
+    <<~EOS
+      To finish setup, run:
+        rampart setup
+
+      This auto-detects Claude Code, Codex, Cline, and OpenClaw
+      and wires up Rampart's policy engine for each agent.
+    EOS
+  end
+
   test do
     assert_match version.to_s, shell_output("#{bin}/rampart version", 0)
   rescue
