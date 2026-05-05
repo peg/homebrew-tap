@@ -5,21 +5,21 @@
 class Rampart < Formula
   desc "Open-source firewall for AI agents"
   homepage "https://rampart.sh"
-  version "1.0.0-rc.1"
+  version "1.0.0-rc.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/peg/rampart/releases/download/v1.0.0-rc.1/rampart_1.0.0-rc.1_darwin_amd64.tar.gz"
-      sha256 "1b55f9a2f5131253d164028e2c26f2fb7bba4150ba47f1b8ec9181f2f38a0bb3"
+      url "https://github.com/peg/rampart/releases/download/v1.0.0-rc.2/rampart_1.0.0-rc.2_darwin_amd64.tar.gz"
+      sha256 "c0d96fee5b85a776fb4c99b1823bb6f6a250d614f0ab6356af1fb1e0736cc51c"
 
       define_method(:install) do
         bin.install "rampart"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/peg/rampart/releases/download/v1.0.0-rc.1/rampart_1.0.0-rc.1_darwin_arm64.tar.gz"
-      sha256 "a2b5ad17539a05701fd1c672a6b4dfb92209005f73e3a7cde3380297f6f79df8"
+      url "https://github.com/peg/rampart/releases/download/v1.0.0-rc.2/rampart_1.0.0-rc.2_darwin_arm64.tar.gz"
+      sha256 "5edaa57389081fd038453efba76c9f109a018ebd84c45957a6fb1f4e4a9e1583"
 
       define_method(:install) do
         bin.install "rampart"
@@ -29,15 +29,15 @@ class Rampart < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/peg/rampart/releases/download/v1.0.0-rc.1/rampart_1.0.0-rc.1_linux_amd64.tar.gz"
-      sha256 "f90c3bac8047d3df59e746c077b46a3efe011a15c8c1eae03bc2384e54096991"
+      url "https://github.com/peg/rampart/releases/download/v1.0.0-rc.2/rampart_1.0.0-rc.2_linux_amd64.tar.gz"
+      sha256 "b63d186a40ffc0d26727c707fd9eec3e8db7d8896cc0bf07704d0acc4efbe7a3"
       define_method(:install) do
         bin.install "rampart"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/peg/rampart/releases/download/v1.0.0-rc.1/rampart_1.0.0-rc.1_linux_arm64.tar.gz"
-      sha256 "eb68391ccc787d55cd0de86c8509a8b8303ca55e8f55695a56a2d7ca7870a902"
+      url "https://github.com/peg/rampart/releases/download/v1.0.0-rc.2/rampart_1.0.0-rc.2_linux_arm64.tar.gz"
+      sha256 "45747b12de8d9865cab23052c28c5dddfe54e6032bf7fe2440b4faff0e4dcdd6"
       define_method(:install) do
         bin.install "rampart"
       end
